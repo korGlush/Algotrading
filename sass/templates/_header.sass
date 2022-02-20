@@ -1,0 +1,29 @@
+.header
+    font-weight: 700
+    &__items
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__nav
+        &-items
+            display: flex
+        &-item
+            &:not(:last-child)
+                margin-right: 4.437rem
+        &-link
+            text-transform: uppercase
+            color: $grey
+            font-size: 0.875rem
+            transition: .3s
+            padding-bottom: 1rem
+            &:hover
+                color: $dark
+                border-bottom: 3px solid rgba(0, 86, 207, 1)
+    &__num
+        font-size: 1rem
+        color: $grey
+
+.number-dark
+    color: $dark
+    font-weight: 700
+        
