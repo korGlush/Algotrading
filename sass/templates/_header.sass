@@ -1,29 +1,42 @@
 .header
-    font-weight: 700
-    &__items
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 99
+    background: $light
+    .menu
         display: flex
-        justify-content: space-between
         align-items: center
-    &__nav
-        &-items
-            display: flex
-        &-item
-            &:not(:last-child)
-                margin-right: 4.437rem
-        &-link
+        justify-content: space-between
+        padding: 1.9rem 0
+    .logo
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: $primary
+        &__img
+            width: 25px
+            height: 27px
+            margin-right: 0.857rem
+        &__text
+            font-weight: bold
+    .nav
+        &__item
+            font-weight: bold
+            text-decoration: none
             text-transform: uppercase
-            color: $grey
-            font-size: 0.875rem
-            transition: .3s
-            padding-bottom: 1rem
+            color: $secondary
+            padding: 1.428rem 0
+            margin-right: 4.4375rem
+            transition: all 0.3s
             &:hover
-                color: $dark
-                border-bottom: 3px solid rgba(0, 86, 207, 1)
-    &__num
-        font-size: 1rem
-        color: $grey
-
-.number-dark
-    color: $dark
-    font-weight: 700
-        
+               color: $primary
+               border-bottom: 2px solid $blue
+            &:last-child
+                margin-right: 0
+    .phone
+        color: $primary
+        text-decoration: none
+        font-size: 1.3rem
+    
