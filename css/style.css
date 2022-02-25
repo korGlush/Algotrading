@@ -341,7 +341,9 @@ template {
   display: none;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -527,7 +529,7 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: url("../img/hero-bg.png") no-repeat top 30px left 120px;
+  background: url("../img/hero-bg.png") no-repeat top;
   padding-top: 276px;
   padding-bottom: 0;
 }
