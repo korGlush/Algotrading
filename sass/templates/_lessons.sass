@@ -1,16 +1,120 @@
 .lessons
-    padding: 122px 0
-    background: linear-gradient(0.25turn, $dgrey, $darkblue, $dgrey),url(../img/lessons-bg.png) no-repeat center / cover
-    color: $white
-    
-    .section-title
-        margin-bottom: 3rem
-        &__heading
-            color: $white
-    &__input
+    background: url('../img/lessons-bg.jpg') no-repeat center / cover
+    color: $light
+    padding-top: 60px
+    .section
+        &-title
+            &__heading
+                font-weight: bold
+                color: $light
+            &--left
+                margin-bottom: 3.625rem
+    &-heading
+        margin-bottom: 2.3125rem
+    &-questions
+        padding-left: 1.1rem
+        margin-bottom: 3.125rem
+        &__item
+            margin-bottom: 1.5625rem
+            &::marker
+                color: rgba($light, 0.5)
+            &:last-of-type
+                margin-bottom: 0
+    &-text
+        font-weight: lighter
+        max-width: 27.3875rem
+        padding-left: 1.1rem
+        color: rgba($light, 0.5)
+    &-number
         display: flex
-        flex-direction: column
-        margin: 0 auto
-        max-width: 22.375rem
-        input
+        align-items: center
+        margin-bottom: 4.25rem
+        &__text
+            color: rgba($light, 0.5)
+            margin-right: -6rem
+            margin-bottom: 4.25rem
+            max-width: 6.25rem
+            width: 100%
+        &__button
+            border: none
+            background: transparent
+            padding: 0.65rem 0.9375rem
+            color: rgba($light, 0.5)
+            &--active
+                border: none
+                color: $light
+                background-color: #06BEE1
+                border-radius: 50%
+    .col-50
+        &:last-of-type
+            padding-top: 4rem
+    &-homework
+        padding-bottom: 4.3125rem
+        border-bottom: 1px solid rgba(38, 85, 108, 1)
+        margin-bottom: 4.9375rem
+        &__title
+            font-size: 1.5rem
+            margin-bottom: 2.6875rem
+        &__text
+            max-width: 26.4875rem
+            &::marker
+                color: rgba($light, 0.5)
+        .lessons
+            &-questions
+                margin-bottom: 0
+    &-bonus
+        &__title
+            font-size: 1.5rem
             margin-bottom: 1.75rem
+        &__desc
+            display: flex
+            align-items: center
+        &__img
+            margin-right: 1.9375rem
+        &__text
+            max-width: 20.5375rem
+            color: rgba($light, 0.5)
+    &-buttons
+        display: flex
+        justify-content: center
+        margin-top: 5.75rem
+        &__button
+            margin-right: 1.8125rem
+    .col
+        &-50
+            &--width
+                &:last-of-type
+                    .swiper
+                        padding-top: 4rem
+    .lessons-swiper-pagination
+        display: flex
+    .swiper-pagination-bullet 
+        width: 20px
+        height: 20px
+        text-align: center
+        line-height: 20px
+        font-size: 12px
+        color: rgba($light, 0.5)
+        opacity: 1
+        background: transparent
+    .swiper-pagination
+        position: relative
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+        bottom: 0
+    .swiper-pagination-bullet-active 
+        color: #fff
+        background: #007aff
+    .swiper-button-next, .swiper-button-prev
+        position: relative
+        top: 0
+        margin-top: 0
+        &::after
+            display: none
+    .swiper-button-prev
+        width: 60px
+        background: url('../img/arrow-left--op.png') no-repeat center
+        margin-right: 11.9375rem
+    .swiper-button-next
+        width: 60px
+        background: url('../img/arrow-right--white.png') no-repeat center
+        margin-left: 11.9375rem

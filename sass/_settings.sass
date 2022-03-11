@@ -4,6 +4,7 @@
 html
     font-family: 'Roboto', serif
     font-size: 1rem
+    scroll-behavior: smooth
 
 .container
     width: 100%
@@ -17,6 +18,8 @@ html
     width: 100%
 
 .col
+    &-30
+        flex-basis: 30%
     &-50
         flex-basis: 50%
         &--width
@@ -36,6 +39,7 @@ html
             display: flex
             flex-direction: column
             align-items: start
+            text-align: left
         &__heading
             font-weight: normal
             font-size: 2.25rem
@@ -43,7 +47,8 @@ html
             text-align: center
         &__subtitle
             text-align: center
-            
+button
+    cursor: pointer
 .button
     padding: 1.125rem 2.5rem
     text-decoration: none
@@ -69,3 +74,46 @@ html
         border: 1px solid $light
     &:hover
         filter: drop-shadow(0px 5px 6px $darkerBlue)
+.video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 59.0625rem
+    min-height: 24.1875rem
+    &__play
+            position: relative
+            margin: auto
+            z-index: 99
+
+#button
+    display: inline-block
+    background: $light url('../img/arrow-up.svg') no-repeat center
+    width: 50px
+    height: 50px
+    text-align: center
+    border: 1px solid $darkerBlue
+    border-radius: 50%
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: background-color .3s,   
+    opacity .5s, visibility .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+    &::after
+        content: ''
+        color: #fff
+    &:hover
+        cursor: pointer
+        background-color: lighten($lightenBlue, 10%)
+    &.show
+        opacity: 1
+        visibility: visible
+label
+    &.invalid
+        display: flex
+        color: $lightenBlue
+input
+    &.invalid
+        border: 3px solid $lightenBlue

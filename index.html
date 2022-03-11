@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>AlgoTrading</title>
 </head>
@@ -17,14 +18,14 @@
         <div class="container">
             <div class="menu">
                 <div class="logo menu__logo">
-                    <img src="./img/logo.png" alt="Лого" class="logo__img">
+                    <a href="index.html" class="logo__link"><img src="./img/logo.png" alt="Лого" class="logo__img"></a>
                     <p class="logo__text">алготрейдинг</p>
                 </div>
                 <!-- /.logo menu__logo -->
                 <div class="menu__nav">
-                    <a href="#" class="nav__item">Обучение торговле</a>
-                    <a href="#" class="nav__item">Аналитика</a>
-                    <a href="#" class="nav__item">О проекте</a>
+                    <a href="#format" class="nav__item">Обучение торговле</a>
+                    <a href="#results" class="nav__item">Аналитика</a>
+                    <a href="#steps" class="nav__item">О проекте</a>
                 </div>
                 <!-- /.menu__nav -->
                 <div class="contacts menu__contacts">
@@ -38,13 +39,14 @@
     </header>
     <!-- /.header -->
     <main>
+        <a id="button"></a>
         <section class="section hero">
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="title hero__title">Курс алготрейдинга</h1>
-                    <h3 class="hero__subtitle">обучение алгоритмической торговле</h3>
+                    <h1 class="title hero__title wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">Курс алготрейдинга</h1>
+                    <h3 class="hero__subtitle wow animate__animated animate__fadeInLeft" data-wow-delay="0.3">обучение алгоритмической торговле</h3>
                     <p class="hero__desc">Всего за месяц прямо на сессиях создайте своего эффективного торгового робота с нуля!</p>
-                    <div class="hero__call">
+                    <div class="hero__call wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
                         <div class="call__button">
                             <button class="button hero__button button--primary">Начать обучение</button>
                             <button class="button hero__button button--secondary">узнать подробнее</button>
@@ -58,21 +60,23 @@
                 <div class="hero-subcontent">
                     <div class="cards hero-subcontent__advantages">
                         <div class="row">
-                            <div class="card">
+                            <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                                 <h5 class="card-title">95 <span class="percent--strong">%</span></h5>
                                 <p class="card-subtitle">Увеличение прибыли на финансовых рынках</p>
                                 <p class="card-text">Отсутствие эмоций у робота позволяет в разы увеличить эффективность</p>
                                 </div>
                             <!-- /.card -->
-                            <div class="card">
+                            <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                 <img src="./img/advantage-1.png" alt="Преимущество" class="card-img">
-                                <p class="card-subtitle card-subtitle--lighterW"><strong>Глубокий</strong>  анализ <br> и скорость</p>
+                                <p class="card-subtitle card-subtitle--lighterW"><strong>Глубокий</strong>  анализ <br>
+                                    и скорость</p>
                                 <p class="card-text">Полноценный анализ финансовых инструментов по разработанным математическим алгоритмам за доли секунд</p>
                                 </div>
                             <!-- /.card -->
-                            <div class="card">
+                            <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                                 <img src="./img/advantage-2.png" alt="Преимущество" class="card-img card-img--last">
-                                <p class="card-subtitle card-subtitle--lighterW"><strong>Максимальный</strong> инструментарий</p>
+                                <p class="card-subtitle card-subtitle--lighterW"><strong>Максимальный</strong>
+                                    инструментарий</p>
                                 <p class="card-text">Отслеживайте тысячи финансовых инструментов каждую секунду с минимальными рисками</p>
                                 </div>
                             <!-- /.card -->
@@ -88,7 +92,7 @@
         <!-- /.hero -->
         <section class="section creation">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
                     <h2 class="section-title__heading">Создайте своего <br> авторского торгового робота</h2>
                     <p class="section-title__subtitle">получайте прибыль даже с нулевыми знаниями в сфере алгоритмической торговли</p>
                 </div>
@@ -96,8 +100,11 @@
                 <div class="row">
                     <div class="col">
                         <div class="creation-text">
-                            <h3 class="creation-title"><strong>Сколько бы Вы заработали</strong>, используя торгового робота</h3>
-                            <p class="creation-text">Просто введите данные и сравните результаты </p>
+                            <h3 class="creation-title"><strong>Сколько бы Вы
+                            заработали</strong>, используя
+                            торгового робота</h3>
+                            <p class="creation-text">Просто введите данные
+                            и сравните результаты </p>
                         </div>
                         <!-- /.creation-text -->
                     </div>
@@ -147,7 +154,7 @@
         <!-- /.creation-learning -->
         <section class="section benefits">
             <div class="container">
-                <h2 class="section-title__heading"><strong>Какие выгоды </strong> я получу<br> от создания своего робота?</h2>
+                <h2 class="section-title__heading wow animate__animated animate__fadeIn" data-wow-delay="0.1s""><strong>Какие выгоды </strong> я получу<br> от создания своего робота?</h2>
                 <div class="benefits-swiper">
                     <!-- Slider main container -->
                     <div class="swiper swiper-benefits">
@@ -193,19 +200,19 @@
             <!-- /.container -->
         </section>
         <!-- /.section benefits -->
-        <section class="section steps">
+        <section id="steps" class="section steps">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
                     <h2 class="section-title__heading"><strong>Всё</strong> очень просто</h2>
                     <p class="section-title__subtitle">Никаких лишних движений во время обучения. Мы с Вами будем чётко следовать по разработанной нами карте обучения.</p>
                 </div>
                 <!-- /.section-title -->
                 <ul class="stpes-list">
-                    <li class="steps-list__item">Создание робота</li>
-                    <li class="steps-list__item">Внедрение</li>
-                    <li class="steps-list__item">Оптимизация</li>
-                    <li class="steps-list__item">Запуск</li>
-                    <li class="steps-list__item">Прибыль</li>
+                    <li class="steps-list__item wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">Создание робота</li>
+                    <li class="steps-list__item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Внедрение</li>
+                    <li class="steps-list__item wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">Оптимизация</li>
+                    <li class="steps-list__item wow animate__animated animate__fadeInLeft" data-wow-delay="0.8s">Запуск</li>
+                    <li class="steps-list__item wow animate__animated animate__fadeInLeft" data-wow-delay="1.1s">Прибыль</li>
                 </ul>
                 <!-- /.stpes-list -->
                 <div class="steps__video video">
@@ -222,15 +229,15 @@
             <!-- /.container -->
         </section>
         <!-- /.section steps -->
-        <section class="section format">
+        <section id="format" class="section format">
             <div class="container">
                 <div class="section-title">
-                    <h2 class="section-title__heading">Формат обучения</h2>
+                    <h2 class="section-title__heading wow animate__animated animate__fadeIn" data-wow-delay="0.1s"">Формат обучения</h2>
                 </div>
                 <!-- /.section-title -->
                 <div class="row cards">
                     <div class="col-50">
-                        <div class="format-card format-card__test">
+                        <div class="format-card format-card__test wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
                             <h3 class="format-card__title">Тестирование алгоритмов</h3>
                             <p class="format-card__text">Форвардное и стрессовое тестирование торговых роботов на практике</p>
                         </div>
@@ -238,7 +245,7 @@
                     </div>
                     <!-- /.col-50 -->
                     <div class="col">
-                        <div class="format-card format-card__help">
+                        <div class="format-card format-card__help wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
                             <h3 class="format-card__title">Помощь преподавателей</h3>
                             <p class="format-card__text">Ученик всегда может обратиться к наставнику с вопросом и получить точный, своевременный ответ</p>
                         </div>
@@ -278,7 +285,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section format -->
-        <section class="section view">
+        <section id="view" class="section view">
             <div class="container">
                 <div class="section-title--left">
                     <h2 class="section-title__heading"><strong>Как выглядит</strong> Ваш процесс обучения алготрейдингу?</h2>
@@ -690,7 +697,7 @@
         <!-- /.section lessons -->
         <section class="section advantage">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
                     <h2 class="section-title__heading">Преимущества курса</h2>
                 </div>
                 <!-- /.section-title -->
@@ -721,7 +728,7 @@
                     <p class="section-title__subtitle">Результат</p>  
                     <div class="advantage-list__container">
                         <div class="advantage-list__item">
-                            <img src="./img/adrobot.svg" alt="Звезда" class="advantage-list__img">
+                            <img src="./img/robot1.svg" alt="Звезда" class="advantage-list__img">
                             <h3 class="advantage-list__title">Авторские роботы.</h3>
                             <p class="advantage-list__text">Получите авторских торговых роботов алготрейдинга, успешно торгующих с 2013 года</p>
                         </div>
@@ -746,9 +753,330 @@
             <!-- /.container -->
         </section>
         <!-- /.section advantage -->
+        <section class="section prices">
+            <div class="container">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                    <h2 class="section-title__heading"><strong>Сколько</strong>  стоит обучение?</h2>
+                    <p class="section-title__subtitle">Станьте частью алготрейдинга прямо сейчас <br> и всего за месяц прямо на сессиях создайте своего эффективного торгового робота с нуля!</p>
+                </div>
+                <!-- /.section-title -->
+                <div class="row">
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                            <h3 class="prices-list__title">Gold</h3>
+                            <span class="prices-list__price">$297</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Начитка лекций</li>
+                                <li class="prices-text__item">Практика</li>
+                                <li class="prices-text__item">Ответы на вопросы</li>
+                                <li class="prices-text__item">Тех. поддержка</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                            <h3 class="prices-list__title">Premium</h3>
+                            <span class="prices-list__price">$497</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Обучение с куратором</li>
+                                <li class="prices-text__item">Постоянная возможность связаться с преподователем</li>
+                                <li class="prices-text__item">Практика</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                            <h3 class="prices-list__title">VIP</h3>
+                            <span class="prices-list__price">$997</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Полностью индивидуальное обучение!</li>
+                                <li class="prices-text__item">Индивидуальная <br> программа </li>
+                                <li class="prices-text__item">Максимум практики</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section prices -->
+        <section class="section learning-form">
+            <div class="section-title">
+                <h2 class="section-title__heading">Получите первые видеоуроки совершенно бесплатно уже сейчас!</h2>
+                <p class="section-title__subtitle">Просто внесите Ваши данные в форму прям сейчас, и мы сразу Вам вышлем подборку первых видеоуроков. Убедитесь сами!</p>
+            </div>
+            <!-- /.section-title -->
+            <form action="#" class="form learning-form__form">
+                <div class="input-group learning-form-input-group">
+                    <input type="text" name="userName" class="input learning-form__input" id="user-name" placeholder="Имя">
+                </div>
+                <!-- /.input-group learning-input-group -->
+                <div class="input-group learning-form-input-group">
+                    <input type="tel" name="userPhone" class="input learning-form__input" id="user-phone" placeholder="Телефон">
+                </div>
+                <!-- /.input-group learning-input-group -->
+                <div class="input-group learning-form-input-group">
+                    <input type="email" name="userEmail" class="input learning-form__input" id="user-mail" placeholder="Email">
+                </div>
+                <!-- /.input-group learning-input-group -->
+                <button class="button button--primary learning-form__button">Начать обучение</button> 
+            </form>
+            <!-- /.form learning-form__form -->
+        </section>
+        <!-- /.section learning-form -->
+        <section class="section feedback">
+            <div class="container">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s"">
+                    <h2 class="section-title__heading"><strong>Отзывы</strong> наших учеников</h2>
+                </div>
+                <!-- /.section-title -->
+                <!-- Slider main container -->
+                <div class="swiper feedback-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/play.png" alt="Пуск видео" class="video__play">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="feedback-content__title">Алиса</h3>
+                                <p class="feedback-content__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/play.png" alt="Пуск видео" class="video__play">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="feedback-content__title">Славяна</h3>
+                                <p class="feedback-content__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/play.png" alt="Пуск видео" class="video__play">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="feedback-content__title">Лена</h3>
+                                <p class="feedback-content__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/play.png" alt="Пуск видео" class="video__play">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="feedback-content__title">Мику</h3>
+                                <p class="feedback-content__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__video video">
+                                <img src="./img/play.png" alt="Пуск видео" class="video__play">
+                            </div>
+                            <!-- /.steps__video video -->
+                            <div class="feedback-content">
+                                <h3 class="feedback-content__title">Ульяна</h3>
+                                <p class="feedback-content__text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.</p>
+                            </div>
+                            <!-- /.feedback__content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section feedback -->
+        <section id="results" class="section results">
+            <div class="container">
+                <div class="results-container">
+                    <div class="col">
+                        <div class="section-title--left">
+                            <h2 class="section-title__heading"><strong>Результаты</strong> наших учеников</h2>
+                            <p class="section-title__subtitle">С нами наши ученики научились эффективно торговать на международных рынках</p>
+                        </div>
+                        <!-- /.section-title -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="row">
+                        <div class="col results-examples">
+                            <img src="./img/results-img1.jpeg" alt="Пример" class="results-examples__img">
+                            <h3 class="results-examples__name">Мария, январь 2019</h3>
+                            <p class="results-examples__text">Методом проб и ошибок смог определить необходимые качества успешного трейдера, 70% которых составляет психологическая и эмоциональная устойчивость во время трейдинга</p>
+                        </div>
+                        <!-- /.col results-examples -->
+                        <div class="col results-examples">
+                            <img src="./img/results-img2.jpeg" alt="Пример" class="results-examples__img">
+                            <h3 class="results-examples__name">Иван, январь 2019</h3>
+                            <p class="results-examples__text">Алготрейдинг — это свежее дыхание в мире финансовой аналитики, новые научные подходы к обучению и только качественная информация</p>
+                        </div>
+                        <!-- /.col results-examples -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section results -->
+        <section class="section cashback">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Мы вернем Вам 100% вложенных средств, если Вам не понравятся первые 3 урока</h2>
+                    <button class="button button--primary">Приступить к созданию своего доходного робота</button>
+                </div>
+                <!-- /.section-title -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section cashback -->
+        <section class="section prices">
+            <div class="container">
+                <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                    <h2 class="section-title__heading"><strong>Сколько</strong>  стоит обучение?</h2>
+                    <p class="section-title__subtitle">Станьте частью алготрейдинга прямо сейчас <br> и всего за месяц прямо на сессиях создайте своего эффективного торгового робота с нуля!</p>
+                </div>
+                <!-- /.section-title -->
+                <div class="row">
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                            <h3 class="prices-list__title">Gold</h3>
+                            <span class="prices-list__price">$297</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Начитка лекций</li>
+                                <li class="prices-text__item">Практика</li>
+                                <li class="prices-text__item">Ответы на вопросы</li>
+                                <li class="prices-text__item">Тех. поддержка</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                            <h3 class="prices-list__title">Premium</h3>
+                            <span class="prices-list__price">$497</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Обучение с куратором</li>
+                                <li class="prices-text__item">Постоянная возможность связаться с преподователем</li>
+                                <li class="prices-text__item">Практика</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="prices-list__item wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                            <h3 class="prices-list__title">VIP</h3>
+                            <span class="prices-list__price">$997</span>
+                            <ul class="prices-text">
+                                <li class="prices-text__item">Полностью индивидуальное обучение!</li>
+                                <li class="prices-text__item">Индивидуальная <br> программа </li>
+                                <li class="prices-text__item">Максимум практики</li>
+                            </ul>
+                            <!-- /.prices-list__text -->
+                            <button class="button prices-list__button">Купить</button>
+                        </div>
+                        <!-- /.prices-list__item -->
+                    </div>
+                    <!-- /.col-30 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section prices -->
+        <section class="section questions">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Остались вопросы?</h2>
+                    <p class="section-title__subtitle">Оставьте свои контактные данные и мы с Вами свяжемся в самое ближайшее время</p>
+                </div>
+                <!-- /.section-title -->
+                <form action="#" class="form questions-form__form">
+                    <div class="input group questions-form-group">
+                        <input type="text" name="userName" class="input learning-form__input" id="question-user-name" placeholder="Имя">
+                    </div>
+                    <!-- /.input group questions-form-group -->
+                    <div class="input group questions-form-group">
+                        <input type="tel" name="userPhone" class="input learning-form__input" id="question-user-phone" placeholder="Телефон">
+                    </div>
+                    <!-- /.input group questions-form-group -->
+                    <div class="input group questions-form-group">
+                        <input type="email" name="userEmail" class="input learning-form__input" id="question-user-mail" placeholder="Email">
+                    </div>
+                    <!-- /.input group questions-form-group -->
+                    <button class="button button--primary learning-form__button">Свяжитесь со мной</button> 
+                </form>
+                <!-- /.form learning-form__form -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section questions -->
     </main>
+    <footer class="section footer">
+        <div class="container">
+            <div class="row footer-upper">
+                <h2 class="footer-upper__title">Алготрейдинг</h2>
+                <input type="email" name="userEmail" class="footer-upper__email" placeholder="E-mail рассылка">
+            </div>
+            <!-- /.row footer-upper-->
+            <div class="row footer-below">
+                <p class="footer-below__subtitle">Обучение алгоритмической торговле</p>
+                <div class="footer-contacts">
+                    <a href="#" class="footer-contacts__item">Аналитика</a>
+                    <a href="#" class="footer-contacts__item">О проекте</a>
+                    <a href="#" class="footer-contacts__item">Контакты</a>
+                </div>
+                <!-- /.footer-below__contacts -->
+                <div class="footer-links">
+                    <a href="#" class="footer-links__item">Вопросы и ответы</a>
+                    <a href="#" class="footer-links__item">Записаться на курс</a>
+                </div>
+                <!-- /.footer-links -->
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                    <a href="#" class="footer-social__link"></a>
+                </div>
+                <!-- /.footer-social -->
+            </div>
+            <!-- /.row footer-below -->
+        </div>
+        <!-- /.container -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
